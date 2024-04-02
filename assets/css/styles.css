@@ -1,0 +1,109 @@
+/* Styles pour les arrière-plans et les couleurs de texte */
+.bg-clair {
+    background-color: #f29849; /* Couleur de fond claire */
+}
+
+.bg-sombre {
+    background-color: #260b01; /* Couleur de fond sombre */
+}
+
+.text-clair {
+    color: #f29849; /* Couleur de texte claire */
+}
+
+.text-sombre {
+    color: #260b01; /* Couleur de texte sombre */
+}
+
+/* Styles pour les bordures */
+.border-sombre {
+    border-style: solid; /* Style de bordure solide */
+    border-color: rgb(38, 11, 1) !important; /* Couleur de bordure sombre */
+}
+
+.border-clair {
+    border-color: rgba(rgb(242, 152, 73), 1) !important; /* Couleur de bordure claire */
+}
+
+/* Styles pour les boutons avec arrière-plan clair ou sombre */
+a.btn.bg-clair:hover,
+button.btn.bg-clair:hover {
+    color: #f29849; /* Couleur de texte claire au survol */
+    background-color: #260b01; /* Couleur de fond sombre au survol */
+}
+
+a.btn.bg-sombre:hover,
+button.btn.bg-sombre:hover {
+    color: #260b01; /* Couleur de texte sombre au survol */
+    background-color: #f29849; /* Couleur de fond claire au survol */
+}
+
+/* Styles pour les liens de navigation */
+a.nav-link>span:hover {
+    color: #f29849; /* Couleur de texte claire au survol */
+}
+
+/* Styles pour les éléments avec largeur spécifique */
+.w-30 {
+    width: 30% !important; /* Largeur de 30% */
+}
+
+.w-60 {
+    width: 60% !important; /* Largeur de 60% */
+}
+
+.w-40 {
+    width: 40% !important; /* Largeur de 40% */
+}
+
+/* Styles pour le conteneur de couverture */
+.cover-container {
+    max-width: 42em; /* Largeur maximale du conteneur de couverture */
+}
+
+/* Styles pour les pages avec une hauteur minimale spécifique */
+.page {
+    min-height: 80vh; /* Hauteur minimale de 80% de la hauteur de la vue */
+}
+
+/* Media queries pour les écrans de taille spécifique */
+@media (min-width: 768px) {
+    /* Styles appliqués lorsque la largeur de l'écran est supérieure à 768px */
+    #banner {
+        background-image: url('../images/banner.jpg'); /* Image de bannière pour les écrans larges */
+        background-size: cover; /* Redimensionner l'image de la bannière pour remplir son conteneur */
+    }
+    
+    #mon-cover {
+        min-height: 60vh; /* Hauteur minimale de la couverture pour les écrans larges */
+    }
+
+    /* Styles pour les largeurs spécifiques à utiliser sur les écrans larges */
+    .w-md-50 {
+        width: 50% !important;
+    }
+
+    .w-md-60 {
+        width: 60% !important;
+    }
+
+    .w-md-40 {
+        width: 40% !important;
+    }
+
+    .w-md-20 {
+        width: 20% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Styles appliqués lorsque la largeur de l'écran est inférieure ou égale à 768px */
+    #banner {
+        background-image: url('../images/banner-mobile.jpg'); /* Image de bannière pour les écrans mobiles */
+        background-size: cover; /* Redimensionner l'image de la bannière pour remplir son conteneur */
+    }
+
+    #mon-cover {
+        min-height: 60vh; /* Hauteur minimale de la couverture pour les écrans mobiles */
+    }
+}
